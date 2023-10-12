@@ -16,4 +16,8 @@ export class HomePage {
   public showList() {
     this.navCtrl.navigateForward("question-list");
   }
+
+  public loadFromServer() {
+    this.data.loadByHTTP();
+  }
 }

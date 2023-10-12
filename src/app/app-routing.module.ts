@@ -12,7 +12,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'question',
+    path: 'question/:id',
     loadChildren: () => import('./PL/question/question.module').then( m => m.QuestionPageModule)
   },
   {
